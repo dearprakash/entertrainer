@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E48DB6FBA14CCE3FEB0D97D /* Pods_TrafficInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAE1B0A6958549D6CC7F387 /* Pods_TrafficInfo.framework */; };
+		CD0A3B1F1F630B4400C02A2C /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0A3B1E1F630B4400C02A2C /* LandingPageViewController.swift */; };
+		CD0DA0711F620B5B00A25FAF /* IcomeraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DA0701F620B5B00A25FAF /* IcomeraHelper.swift */; };
+		CD0DA0731F62694200A25FAF /* CLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DA0721F62694200A25FAF /* CLManager.swift */; };
+		CD0DA0751F626DAB00A25FAF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0DA0741F626DAB00A25FAF /* CoreLocation.framework */; };
+		CD0DA0771F626DB400A25FAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0DA0761F626DB400A25FAF /* MapKit.framework */; };
+		CD37E3101F62D1BD00636EE4 /* StationsAlongRouteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37E30F1F62D1BD00636EE4 /* StationsAlongRouteClient.swift */; };
+		CD37E3121F62D2F400636EE4 /* SJStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD37E3111F62D2F400636EE4 /* SJStation.swift */; };
+		CDAA49E21F63193C0015C280 /* SJStationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA49E11F63193C0015C280 /* SJStationAnnotation.swift */; };
+		CDAA49E41F631EEB0015C280 /* SJLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA49E31F631EEB0015C280 /* SJLocation.swift */; };
+		CDAA49E61F6320CC0015C280 /* HereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA49E51F6320CC0015C280 /* HereViewController.swift */; };
+		CDDA214C1F60F1B20038CEA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA214B1F60F1B20038CEA2 /* AppDelegate.swift */; };
+		CDDA21531F60F1B20038CEA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDA21511F60F1B20038CEA2 /* Main.storyboard */; };
+		CDDA21551F60F1B20038CEA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDA21541F60F1B20038CEA2 /* Assets.xcassets */; };
+		CDDA21581F60F1B20038CEA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDA21561F60F1B20038CEA2 /* LaunchScreen.storyboard */; };
+		CDDA21611F60F2AB0038CEA2 /* TrafficArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA21601F60F2AB0038CEA2 /* TrafficArea.swift */; };
+		CDDA21631F60F3170038CEA2 /* TrafficMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA21621F60F3170038CEA2 /* TrafficMessage.swift */; };
+		CDDA21651F61F4E20038CEA2 /* SRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA21641F61F4E20038CEA2 /* SRAPIClient.swift */; };
+		CDDA21671F62089A0038CEA2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA21661F62089A0038CEA2 /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AAE1B0A6958549D6CC7F387 /* Pods_TrafficInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		248FE7C431ADDB1C2AB56474 /* Pods-TrafficInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficInfo/Pods-TrafficInfo.release.xcconfig"; sourceTree = "<group>"; };
+		46D76B173932AA7A73C985BB /* Pods-TrafficInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrafficInfo/Pods-TrafficInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0A3B1E1F630B4400C02A2C /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		CD0DA0701F620B5B00A25FAF /* IcomeraHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcomeraHelper.swift; sourceTree = "<group>"; };
+		CD0DA0721F62694200A25FAF /* CLManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLManager.swift; sourceTree = "<group>"; };
+		CD0DA0741F626DAB00A25FAF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CD0DA0761F626DB400A25FAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD29BA931F657F460033ABBC /* (MaybeDont) ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "(MaybeDont) ReadMe.md"; sourceTree = "<group>"; };
+		CD37E30F1F62D1BD00636EE4 /* StationsAlongRouteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsAlongRouteClient.swift; sourceTree = "<group>"; };
+		CD37E3111F62D2F400636EE4 /* SJStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJStation.swift; sourceTree = "<group>"; };
+		CDAA49E11F63193C0015C280 /* SJStationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJStationAnnotation.swift; sourceTree = "<group>"; };
+		CDAA49E31F631EEB0015C280 /* SJLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SJLocation.swift; sourceTree = "<group>"; };
+		CDAA49E51F6320CC0015C280 /* HereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HereViewController.swift; sourceTree = "<group>"; };
+		CDDA21481F60F1B20038CEA2 /* TrafficInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDA214B1F60F1B20038CEA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDDA21521F60F1B20038CEA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDDA21541F60F1B20038CEA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDDA21571F60F1B20038CEA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDDA21591F60F1B20038CEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDA21601F60F2AB0038CEA2 /* TrafficArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficArea.swift; path = Model/TrafficArea.swift; sourceTree = "<group>"; };
+		CDDA21621F60F3170038CEA2 /* TrafficMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficMessage.swift; path = Model/TrafficMessage.swift; sourceTree = "<group>"; };
+		CDDA21641F61F4E20038CEA2 /* SRAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRAPIClient.swift; sourceTree = "<group>"; };
+		CDDA21661F62089A0038CEA2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDDA21451F60F1B20038CEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0DA0771F626DB400A25FAF /* MapKit.framework in Frameworks */,
+				CD0DA0751F626DAB00A25FAF /* CoreLocation.framework in Frameworks */,
+				5E48DB6FBA14CCE3FEB0D97D /* Pods_TrafficInfo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F43070369EC6922CE7B21FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46D76B173932AA7A73C985BB /* Pods-TrafficInfo.debug.xcconfig */,
+				248FE7C431ADDB1C2AB56474 /* Pods-TrafficInfo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD0DA0781F62B9C000A25FAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA21641F61F4E20038CEA2 /* SRAPIClient.swift */,
+				CD37E30F1F62D1BD00636EE4 /* StationsAlongRouteClient.swift */,
+				CD0DA0701F620B5B00A25FAF /* IcomeraHelper.swift */,
+				CD0DA0721F62694200A25FAF /* CLManager.swift */,
+				CDAA49E11F63193C0015C280 /* SJStationAnnotation.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CD0DA0791F62B9D900A25FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA21661F62089A0038CEA2 /* MapViewController.swift */,
+				CD0A3B1E1F630B4400C02A2C /* LandingPageViewController.swift */,
+				CDAA49E51F6320CC0015C280 /* HereViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CDDA213F1F60F1B20038CEA2 = {
+			isa = PBXGroup;
+			children = (
+				CD29BA931F657F460033ABBC /* (MaybeDont) ReadMe.md */,
+				CDDA214A1F60F1B20038CEA2 /* TrafficInfo */,
+				CDDA21491F60F1B20038CEA2 /* Products */,
+				7F43070369EC6922CE7B21FD /* Pods */,
+				D3434C5E709CEE7DFF0912DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDDA21491F60F1B20038CEA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA21481F60F1B20038CEA2 /* TrafficInfo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDDA214A1F60F1B20038CEA2 /* TrafficInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA214B1F60F1B20038CEA2 /* AppDelegate.swift */,
+				CDDA215F1F60F2830038CEA2 /* Model */,
+				CD0DA0791F62B9D900A25FAF /* Views */,
+				CD0DA0781F62B9C000A25FAF /* Helpers */,
+				CDDA21511F60F1B20038CEA2 /* Main.storyboard */,
+				CDDA21541F60F1B20038CEA2 /* Assets.xcassets */,
+				CDDA21561F60F1B20038CEA2 /* LaunchScreen.storyboard */,
+				CDDA21591F60F1B20038CEA2 /* Info.plist */,
+			);
+			path = TrafficInfo;
+			sourceTree = "<group>";
+		};
+		CDDA215F1F60F2830038CEA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDDA21601F60F2AB0038CEA2 /* TrafficArea.swift */,
+				CDDA21621F60F3170038CEA2 /* TrafficMessage.swift */,
+				CD37E3111F62D2F400636EE4 /* SJStation.swift */,
+				CDAA49E31F631EEB0015C280 /* SJLocation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D3434C5E709CEE7DFF0912DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DA0761F626DB400A25FAF /* MapKit.framework */,
+				CD0DA0741F626DAB00A25FAF /* CoreLocation.framework */,
+				1AAE1B0A6958549D6CC7F387 /* Pods_TrafficInfo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDDA21471F60F1B20038CEA2 /* TrafficInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDA215C1F60F1B20038CEA2 /* Build configuration list for PBXNativeTarget "TrafficInfo" */;
+			buildPhases = (
+				C2C7798E11DA99F52FC7A79F /* [CP] Check Pods Manifest.lock */,
+				CDDA21441F60F1B20038CEA2 /* Sources */,
+				CDDA21451F60F1B20038CEA2 /* Frameworks */,
+				CDDA21461F60F1B20038CEA2 /* Resources */,
+				1D60537232EF16FAEE2AEBDB /* [CP] Embed Pods Frameworks */,
+				70F1165121BA0847807F8DB3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficInfo;
+			productName = TrafficInfo;
+			productReference = CDDA21481F60F1B20038CEA2 /* TrafficInfo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDDA21401F60F1B20038CEA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sveriges Radio AB";
+				TargetAttributes = {
+					CDDA21471F60F1B20038CEA2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9DLE7FXSES;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDDA21431F60F1B20038CEA2 /* Build configuration list for PBXProject "TrafficInfo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDDA213F1F60F1B20038CEA2;
+			productRefGroup = CDDA21491F60F1B20038CEA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDDA21471F60F1B20038CEA2 /* TrafficInfo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDDA21461F60F1B20038CEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDA21581F60F1B20038CEA2 /* LaunchScreen.storyboard in Resources */,
+				CDDA21551F60F1B20038CEA2 /* Assets.xcassets in Resources */,
+				CDDA21531F60F1B20038CEA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D60537232EF16FAEE2AEBDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrafficInfo/Pods-TrafficInfo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficInfo/Pods-TrafficInfo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70F1165121BA0847807F8DB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrafficInfo/Pods-TrafficInfo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C7798E11DA99F52FC7A79F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrafficInfo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDDA21441F60F1B20038CEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAA49E61F6320CC0015C280 /* HereViewController.swift in Sources */,
+				CDDA21611F60F2AB0038CEA2 /* TrafficArea.swift in Sources */,
+				CD37E3121F62D2F400636EE4 /* SJStation.swift in Sources */,
+				CD0DA0731F62694200A25FAF /* CLManager.swift in Sources */,
+				CD0DA0711F620B5B00A25FAF /* IcomeraHelper.swift in Sources */,
+				CDDA21671F62089A0038CEA2 /* MapViewController.swift in Sources */,
+				CDDA214C1F60F1B20038CEA2 /* AppDelegate.swift in Sources */,
+				CDAA49E41F631EEB0015C280 /* SJLocation.swift in Sources */,
+				CD0A3B1F1F630B4400C02A2C /* LandingPageViewController.swift in Sources */,
+				CDDA21631F60F3170038CEA2 /* TrafficMessage.swift in Sources */,
+				CDDA21651F61F4E20038CEA2 /* SRAPIClient.swift in Sources */,
+				CDAA49E21F63193C0015C280 /* SJStationAnnotation.swift in Sources */,
+				CD37E3101F62D1BD00636EE4 /* StationsAlongRouteClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDDA21511F60F1B20038CEA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDA21521F60F1B20038CEA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDDA21561F60F1B20038CEA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDA21571F60F1B20038CEA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDDA215A1F60F1B20038CEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDDA215B1F60F1B20038CEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDDA215D1F60F1B20038CEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D76B173932AA7A73C985BB /* Pods-TrafficInfo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9DLE7FXSES;
+				INFOPLIST_FILE = TrafficInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.sr.TrafficInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CDDA215E1F60F1B20038CEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248FE7C431ADDB1C2AB56474 /* Pods-TrafficInfo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9DLE7FXSES;
+				INFOPLIST_FILE = TrafficInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.sr.TrafficInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDDA21431F60F1B20038CEA2 /* Build configuration list for PBXProject "TrafficInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA215A1F60F1B20038CEA2 /* Debug */,
+				CDDA215B1F60F1B20038CEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDA215C1F60F1B20038CEA2 /* Build configuration list for PBXNativeTarget "TrafficInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDA215D1F60F1B20038CEA2 /* Debug */,
+				CDDA215E1F60F1B20038CEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDDA21401F60F1B20038CEA2 /* Project object */;
+}
